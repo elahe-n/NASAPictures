@@ -49,6 +49,8 @@ body {
   height: 60px;
   z-index: -1;
   padding-top: 1em;
+  filter: blur(2px);
+  /* filter: blur(0.5rem); */
 }
 
 .clickable{
@@ -66,11 +68,11 @@ body {
 }
 
 .clickablenav:hover{
-  color:rgb(236, 104, 104);
+  color:rgb(240, 128, 128);
 }
 
 .clickable:hover{
-  color:rgb(236, 104, 104);
+  color:rgb(231, 136, 136);
 }
 
 .images-container {
@@ -171,25 +173,44 @@ textarea {
 }
 
 .commentcontainer{
-  margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  margin: 4em auto;
+  border-radius: 10px; 
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  width:fit-content;
+  background-color: #fae5e5;  
 }
 
+ul{
+  padding-inline-start: 0px;
+  padding: 1em 3em;
+}
+
+h3{
+  color:rgb(26, 48, 95);
+  margin-bottom: 0;
+}
 .message{
   list-style: none;
-  margin: 1em;
-  padding: 1em 3em;
+  margin: 0.5em  ;
+  padding: 1em ;
   width: fit-content;
   background-color: #eba6a6;
   border-radius: 5px;
   font-family: Helvetica, Arial, sans-serif;
   color: rgb(17, 31, 61);
   font-weight:500;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 footer {
   background-color: rgb(226, 225, 225);
-  color: #071741;
+  color:rgb(26, 48, 95);
   padding: 0.75rem 0;
   text-align: center;
   text-transform: capitalize;
@@ -215,7 +236,7 @@ footer {
     font-size: 18px;
   }
 
-  form { max-width:350px; margin:30px auto; }
+form { max-width:350px; margin:30px auto; }
 
 .feedback-input {
   font-weight:300;
@@ -231,15 +252,13 @@ footer {
 }
 
 .commentcontainer{
-  margin-bottom: 2em;
+  margin: 1.5em 1em;
 }
 
 .message{
-  margin: 0.5em 1em;
-  padding: 0.5em 1em;
-  font-size: 15px;
+  padding: 0.5em 0.5em;
+  font-size: 13px;
 }
-
 
 }
 
