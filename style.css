@@ -1,0 +1,246 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(-45deg, #01172f,#13365a,#01172f);
+  overflow-x: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.loader {
+  background-color: #01172f;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.navigation-container {
+  position: fixed;
+  top: 0;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  background: linear-gradient(-50deg,#a5a3a3, #f0c4c4,#0e3e72,#f0c4c4,#a5a3a3);
+  position: fixed;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  z-index: -1;
+  padding-top: 1em;
+}
+
+.clickable{
+  color:rgb(30, 122, 243);
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5em;
+}
+
+.clickablenav{
+  color:rgb(236, 241, 248);
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 1em;
+}
+
+.clickablenav:hover{
+  color:rgb(236, 104, 104);
+}
+
+.clickable:hover{
+  color:rgb(236, 104, 104);
+}
+
+.images-container {
+  width: 750px;
+  margin-top: 100px;
+}
+
+.card {
+  background: rgb(230, 244, 250);
+  margin: 10px 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(218, 216, 216, 0.2);
+}
+
+.card-img-top{
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  text-align: justify;
+  padding: 25px;
+}
+
+.card-title {
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+.save-confirmed {
+  background: whitesmoke;
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(204, 201, 201, 0.2);
+  transition: 0.3s;
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+  font-size: 16px;
+  color: #295b8d;
+}
+
+.hidden{
+  display: none;
+}
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:rgb(228, 227, 227);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:3px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.submit {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  background:rgb(221, 219, 219);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:rgb(26, 48, 95);
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+.submit:hover { 
+  transition: ease-in-out;
+  filter:brightness(150%)
+}
+
+.commentcontainer{
+  margin-bottom: 4em;
+}
+
+.message{
+  list-style: none;
+  margin: 1em;
+  padding: 1em 3em;
+  width: fit-content;
+  background-color: #eba6a6;
+  border-radius: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgb(17, 31, 61);
+  font-weight:500;
+  font-size: 18px;
+}
+
+footer {
+  background-color: rgb(226, 225, 225);
+  color: #071741;
+  padding: 0.75rem 0;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+  body {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .images-container{
+    width: 100%;
+  }
+
+  .save-confirmed {
+    right: 25px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  form { max-width:350px; margin:30px auto; }
+
+.feedback-input {
+  font-weight:300;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  font-size:17px;
+  font-weight:600;
+}
+
+.commentcontainer{
+  margin-bottom: 2em;
+}
+
+.message{
+  margin: 0.5em 1em;
+  padding: 0.5em 1em;
+  font-size: 15px;
+}
+
+
+}
+
+

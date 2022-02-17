@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Pictures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+  
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader hidden">
+        <img src="rocket.svg" alt="Loading rocket">
+    </div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navigation-container">
+            <span class="background"></span>
+            <!-- Results Nav -->
+            <span class="navigation-items " id="resultsNav">
+                <h3 class="clickablenav" onclick="updateDOM('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickablenav" onclick="getNasaPictures()" >Load More</h3>
+            </span>
+            <!-- Favorites Nav -->
+            <span class="navigation-items hidden" id="favoritesNav">
+            <h3 class="clickablenav" onclick="getNasaPictures()">Load More NASA Images</h3>
+          </span>
+        </div>
+        <!-- Image Container -->
+        <div class="images-container">
+            <!-- <div class="card">
+                <a href="" title="Full Image" target="_blank">
+                    <img src="https://apod.nasa.gov/apod/image/2202/TerminatorMoon_Shet_3117.jpg" alt="NASA Picture of the day" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Title of image</h5>
+                    <p class="clickable">Add to Favorites</p>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eos libero, quo adipisci dolorum iste nesciunt ad suscipit architecto, quaerat necessitatibus commodi culpa fuga vero voluptates maxime, totam corporis repellendus.lorem</p>
+                    <small class="text-muted">
+                        <strong>2022</strong>
+                        <span>Copyright Info</span>
+                    </small>
+                </div>
+            </div> -->
+        </div>
+
+    </div>    
+    <!-- Save Confirmation  -->
+    <div class="save-confirmed" hidden>
+        <h1>ADDED</h1>
+    </div>
+
+    <div class="formcontainer">
+        <form method="post" action="" id="form">      
+            <input name="name" type="text" class="feedback-input" id="firstName" placeholder="Firstname" required />   
+            <input name="name" type="text" class="feedback-input" id="lastName" placeholder="Lastname" /> 
+            <input name="email" type="email" class="feedback-input" id="email" placeholder="Email" />
+            <textarea name="text" class="feedback-input" id="comment" placeholder="Comment" required></textarea>
+            <input type="submit" value="SUBMIT" class="submit"/>
+          </form>
+    </div>
+
+    <div class="commentcontainer"> <ul id="usersEl"></ul> </div>
+        
+    <footer>
+        <small>copyright &copy; 2022. all rights reserved.</small>
+    </footer>
+
+          <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+          
+
+    <script>
+        const firebaseConfig = {
+    apiKey: "AIzaSyDSXxfiihbHeB2e1DFS1dmi56Ote2GBohw",
+    authDomain: "first-project-3af7f.firebaseapp.com",
+    projectId: "first-project-3af7f",
+    storageBucket: "first-project-3af7f.appspot.com",
+    messagingSenderId: "878254004538",
+    appId: "1:878254004538:web:9fc1426fdf99d237ec5803"
+  };
+  firebase.initializeApp(firebaseConfig);
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>
