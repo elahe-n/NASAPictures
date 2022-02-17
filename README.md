@@ -1,4 +1,4 @@
-# NASAPictures
+# NASA Pictures of the day
 
 ### Display  5 images of NASA in every page loading.
 
