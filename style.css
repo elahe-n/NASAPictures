@@ -188,12 +188,14 @@ textarea {
 
 ul{
   padding-inline-start: 0px;
-  padding: 1em 3em;
+  padding: 0 3em;
 }
 
 h3{
   color:rgb(26, 48, 95);
   margin-bottom: 0;
+  align-self: flex-start;
+  padding-left: 3em;
 }
 .message{
   list-style: none;
