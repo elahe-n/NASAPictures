@@ -1,6 +1,6 @@
 ## NASA Pictures of the day
 
-#### Displays 5 images of NASA in every page loading using NASA APOD api.
+#### List and displays 5 images of NASA and its description and date in every page loading, using NASA APOD api.
 
 ##### Users can add pictures to Favorites 
 ##### Users can visit Favorites page by navigation menu in header
